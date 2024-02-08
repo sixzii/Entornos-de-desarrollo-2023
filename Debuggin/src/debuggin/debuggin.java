@@ -9,9 +9,9 @@ public class debuggin {
 		int num_aleat[]=new int[elementos];
 		for (int i=0; i< num_aleat.length;i++) {
 			num_aleat[i]=(int)(Math.random()*100);//el error estaba en Math.random que había que meterlo
-		}										// en (), es decir (Math.random()+100)
-		for (int elem: num_aleat) {
-			System.out.println(elem);
+		}										// en (), es decir = (int)(Math.random()+100), porque Math.random
+		for (int elem: num_aleat) {				// genera números aleatorios de 0 a 1 (decimales) y al convertirlos
+			System.out.println(elem);			// a enteros (int) se pierde la parte decimal.
 		}
 
 	}
